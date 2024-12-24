@@ -1,4 +1,3 @@
-/* Reset general */
 body {
     margin: 0;
     padding: 0;
@@ -21,18 +20,15 @@ body {
     align-items: center;
 }
 
-/* Nombre alineado a la izquierda */
 .header-left h1 {
     font-size: 1.8rem;
     margin: 0;
     font-weight: bold;
-    background: linear-gradient(90deg, #4CAF50, #2196F3); /* Degradado */
+    background: linear-gradient(90deg, #4CAF50, #2196F3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Fallback */
+    color: transparent;
 }
-
-/* Navegación alineada a la derecha */
 
 .navigation ul {
     list-style: none;
@@ -61,7 +57,7 @@ body {
     display: block;
     height: 2px;
     width: 0;
-    background: linear-gradient(90deg, #FF5722, #FFC107); /* Subrayado dinámico */
+    background: linear-gradient(90deg, #FF5722, #FFC107);
     transition: width 0.3s ease;
     position: absolute;
     bottom: -5px;
@@ -74,7 +70,7 @@ body {
 
 /* Secciones */
 .section {
-    height: 100vh; /* Ocupa toda la pantalla */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,10 +78,18 @@ body {
     text-align: center;
     padding: 4rem 2rem;
     background-color: #fff;
-    scroll-snap-align: start; /* Anclar al comienzo */
+    scroll-snap-align: start;
+    position: relative;
 }
 
-.section h2 {
+.home-h2-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: left;
+}
+
+.home-h2-container h2 {
     font-size: 2rem;
     color: #FF5722;
     background: linear-gradient(90deg, #FF5722, #FFC107);
@@ -94,14 +98,16 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+
 .home-icons {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 25%;
+    left: 20%;
+    transform: translateX(-50%);
     padding: 1rem;
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid #eee;
@@ -119,24 +125,17 @@ body {
     overflow: hidden;
     width: 300px;
     height: 300px;
-    border: 5px solid #FF5722;
+    border: 1px solid;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 10%;
+    right: 5%;
 }
 
 .home-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.home-h2-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    text-align: left;
 }
 
 .projects {
