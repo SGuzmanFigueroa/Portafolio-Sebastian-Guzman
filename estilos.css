@@ -169,6 +169,35 @@ body {
     text-align: center;
 }
 
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-link-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.project-link-icon:hover {
+    transform: scale(1.1);
+}
+
+.project-link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #FF5722;
+}
+
 .project img {
     width: 100%;
     height: auto; /* Mantiene la proporción de la imagen */
